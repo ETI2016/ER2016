@@ -92,7 +92,7 @@ Partial Class frmInvSnapshot
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(379, 186)
+        Me.Button4.Location = New System.Drawing.Point(360, 186)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(68, 22)
         Me.Button4.TabIndex = 4
