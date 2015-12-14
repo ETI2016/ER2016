@@ -23,14 +23,14 @@ Partial Class frmInvSnapshot
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.physcalnum = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dateInitialize = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DateUpdated = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.totalItemsCount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,6 +42,26 @@ Partial Class frmInvSnapshot
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(547, 173)
         Me.DataGridView1.TabIndex = 0
+        '
+        'physcalnum
+        '
+        Me.physcalnum.HeaderText = "Physical Number"
+        Me.physcalnum.Name = "physcalnum"
+        '
+        'dateInitialize
+        '
+        Me.dateInitialize.HeaderText = "Date Initialize"
+        Me.dateInitialize.Name = "dateInitialize"
+        '
+        'DateUpdated
+        '
+        Me.DateUpdated.HeaderText = "Date Updated"
+        Me.DateUpdated.Name = "DateUpdated"
+        '
+        'totalItemsCount
+        '
+        Me.totalItemsCount.HeaderText = "Total Items"
+        Me.totalItemsCount.Name = "totalItemsCount"
         '
         'Button1
         '
@@ -72,32 +92,12 @@ Partial Class frmInvSnapshot
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(338, 186)
+        Me.Button4.Location = New System.Drawing.Point(379, 186)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(68, 22)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "Cancel"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'physcalnum
-        '
-        Me.physcalnum.HeaderText = "Physical Number"
-        Me.physcalnum.Name = "physcalnum"
-        '
-        'dateInitialize
-        '
-        Me.dateInitialize.HeaderText = "Date Initialize"
-        Me.dateInitialize.Name = "dateInitialize"
-        '
-        'DateUpdated
-        '
-        Me.DateUpdated.HeaderText = "Date Updated"
-        Me.DateUpdated.Name = "DateUpdated"
-        '
-        'totalItemsCount
-        '
-        Me.totalItemsCount.HeaderText = "Total Items"
-        Me.totalItemsCount.Name = "totalItemsCount"
         '
         'frmInvSnapshot
         '
