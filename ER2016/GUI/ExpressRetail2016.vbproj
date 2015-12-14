@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E973458-36C3-4EA9-A789-3F105E914CDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ExpressRetail2016.My.MyApplication</StartupObject>
+    <RootNamespace>ExpressRetail2016</RootNamespace>
+    <AssemblyName>ExpressRetail2016</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ExpressRetail2016.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ExpressRetail2016.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddEditCusGroup.Designer.vb">
+      <DependentUpon>frmAddEditCusGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditCusGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditDep.Designer.vb">
+      <DependentUpon>frmAddEditDep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditDep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBOSAccess.Designer.vb">
+      <DependentUpon>frmBOSAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBOSAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmPass.Designer.vb">
+      <DependentUpon>frmConfirmPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCusGroup.Designer.vb">
+      <DependentUpon>frmCusGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCusGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCusSearch.Designer.vb">
+      <DependentUpon>frmCusSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCusSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartment.Designer.vb">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvAdjustment.Designer.vb">
+      <DependentUpon>frmInvAdjustment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvLookup.Designer.vb">
+      <DependentUpon>frmInvLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.vb">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvSnapshot.Designer.vb">
+      <DependentUpon>frmInvSnapshot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvSnapshot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.vb">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOSAccess.Designer.vb">
+      <DependentUpon>frmPOSAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOSAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdSearch.Designer.vb">
+      <DependentUpon>frmProdSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.vb">
+      <DependentUpon>frmProduct.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchasing.Designer.vb">
+      <DependentUpon>frmPurchasing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuote.Designer.vb">
+      <DependentUpon>frmQuote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceiving.Designer.vb">
+      <DependentUpon>frmReceiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturns.Designer.vb">
+      <DependentUpon>frmReturns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnToVendor.Designer.vb">
+      <DependentUpon>frmReturnToVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnToVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRVSelector.Designer.vb">
+      <DependentUpon>frmRVSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRVSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSnapshot.Designer.vb">
+      <DependentUpon>frmSnapshot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSnapshot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStore.Designer.vb">
+      <DependentUpon>frmStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreType.Designer.vb">
+      <DependentUpon>frmStoreType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStoreType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTenderKeys.Designer.vb">
+      <DependentUpon>frmTenderKeys.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTenderKeys.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfers.Designer.vb">
+      <DependentUpon>frmTransfers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTranType.Designer.vb">
+      <DependentUpon>frmTranType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTranType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAccess.Designer.vb">
+      <DependentUpon>frmUserAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendorSupplier.Designer.vb">
+      <DependentUpon>frmVendorSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiMain.Designer.vb">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modConnection.vb" />
+    <Compile Include="modPublicValues.vb" />
+    <Compile Include="modUpdate.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddEditCusGroup.resx">
+      <DependentUpon>frmAddEditCusGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditDep.resx">
+      <DependentUpon>frmAddEditDep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBOSAccess.resx">
+      <DependentUpon>frmBOSAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmPass.resx">
+      <DependentUpon>frmConfirmPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCusGroup.resx">
+      <DependentUpon>frmCusGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCusSearch.resx">
+      <DependentUpon>frmCusSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartment.resx">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvAdjustment.resx">
+      <DependentUpon>frmInvAdjustment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvLookup.resx">
+      <DependentUpon>frmInvLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvSnapshot.resx">
+      <DependentUpon>frmInvSnapshot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOSAccess.resx">
+      <DependentUpon>frmPOSAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdSearch.resx">
+      <DependentUpon>frmProdSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchasing.resx">
+      <DependentUpon>frmPurchasing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuote.resx">
+      <DependentUpon>frmQuote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceiving.resx">
+      <DependentUpon>frmReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturns.resx">
+      <DependentUpon>frmReturns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnToVendor.resx">
+      <DependentUpon>frmReturnToVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRVSelector.resx">
+      <DependentUpon>frmRVSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSnapshot.resx">
+      <DependentUpon>frmSnapshot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStore.resx">
+      <DependentUpon>frmStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStoreType.resx">
+      <DependentUpon>frmStoreType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTenderKeys.resx">
+      <DependentUpon>frmTenderKeys.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfers.resx">
+      <DependentUpon>frmTransfers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTranType.resx">
+      <DependentUpon>frmTranType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAccess.resx">
+      <DependentUpon>frmUserAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorSupplier.resx">
+      <DependentUpon>frmVendorSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiMain.resx">
+      <DependentUpon>mdiMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
