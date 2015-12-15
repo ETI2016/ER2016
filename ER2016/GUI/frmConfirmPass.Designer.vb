@@ -23,13 +23,13 @@ Partial Class frmConfirmPass
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,32 +47,28 @@ Partial Class frmConfirmPass
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Button1
+        'TextBox3
         '
-        Me.Button1.Location = New System.Drawing.Point(204, 108)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 24)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Ok"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TextBox3.Location = New System.Drawing.Point(117, 65)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(139, 20)
+        Me.TextBox3.TabIndex = 5
         '
-        'Label1
+        'TextBox2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 21)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(32, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "User:"
+        Me.TextBox2.Enabled = False
+        Me.TextBox2.Location = New System.Drawing.Point(117, 39)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(139, 20)
+        Me.TextBox2.TabIndex = 4
         '
-        'Label2
+        'TextBox1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 46)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Password:"
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Location = New System.Drawing.Point(117, 14)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(139, 20)
+        Me.TextBox1.TabIndex = 3
         '
         'Label3
         '
@@ -83,28 +79,32 @@ Partial Class frmConfirmPass
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Confirm Password:"
         '
-        'TextBox1
+        'Label2
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(117, 14)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(139, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 46)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Password:"
         '
-        'TextBox2
+        'Label1
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(117, 39)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(139, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(13, 21)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(32, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "User:"
         '
-        'TextBox3
+        'Button1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(117, 65)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(139, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.Button1.Location = New System.Drawing.Point(176, 108)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(70, 24)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Ok"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmConfirmPass
         '
