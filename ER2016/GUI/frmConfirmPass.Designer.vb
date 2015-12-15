@@ -99,7 +99,7 @@ Partial Class frmConfirmPass
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(176, 108)
+        Me.Button1.Location = New System.Drawing.Point(153, 108)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(70, 24)
         Me.Button1.TabIndex = 1
