@@ -1,8 +1,9 @@
 ﻿Imports System.Data.SqlClient
-Module modConnection
+Module ConnectionLogin
     Dim LoginConnect As SqlConnection
     Dim LoginCommand As SqlCommand
     Public Sub Connection()
+        'Check login details
         Dim ConnectLogin As SqlConnection
         Dim CommandLogin As SqlCommandBuilder
         Dim LoginDataAdapter As SqlDataAdapter
@@ -11,7 +12,7 @@ Module modConnection
         Dim LoginRows As Integer
 
         ConnectLogin = New SqlConnection
-        ConnectLogin.ConnectionString = "Data Source=itdevjrgomez;Initial Catalog=ERDB;Persist Security Info=True;User ID=eti;Password=enigmatech2015"
+        ConnectLogin.ConnectionString = "Data Source=" + DatabasePublicValues.DatabaseName + ";Initial Catalog=ERDB;Persist Security Info=True;User ID=erdbuser;Password=usererdb"
         ConnectLogin.Open()
         LoginSQL = "SELECT * FROM MUser WHERE UserName = '" + frmLogin.txtUsername.Text + "' And UPassword ='" + frmLogin.txtPassword.Text + "' "
         LoginDataAdapter = New SqlDataAdapter(LoginSQL, ConnectLogin)
@@ -22,12 +23,12 @@ Module modConnection
 
 
         If LoginRows > 0 Then
-            modPublicValues.UserId = LoginDataSet.Tables("MUser").Rows(0).Item(0)
+            LoginPublicValues.UserId = LoginDataSet.Tables("MUser").Rows(0).Item(0)
             If LoginDataSet.Tables("MUser").Rows(0).Item(4) = True Then
                 frmChangePassword.Show()
             End If
             If LoginDataSet.Tables("MUser").Rows(0).Item(4) = False Then
-                modPublicValues.UserId = LoginDataSet.Tables("MUser").Rows(0).Item(0)
+                LoginPublicValues.UserId = LoginDataSet.Tables("MUser").Rows(0).Item(0)
                 modUpdate.ChangeActive()
                 frmLogin.Hide()
                 frmSplash.ShowDialog()
@@ -43,5 +44,6 @@ Module modConnection
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+        'ITDev Niel 12/15/2015
     End Sub
 End Module

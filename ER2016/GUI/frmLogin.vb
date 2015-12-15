@@ -12,7 +12,7 @@ Public Class frmLogin
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Try
-            modConnection.Connection()
+            ConnectionLogin.Connection()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
