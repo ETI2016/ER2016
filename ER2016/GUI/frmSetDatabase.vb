@@ -12,10 +12,6 @@ Public Class frmSetDatabase
         End If
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub btnConnect_Click(sender As Object, e As EventArgs) Handles btnConnect.Click
         DatabasePublicValues.DatabaseName = txtServer.Text
         ConnectionDatabase.ConnectionDB()
