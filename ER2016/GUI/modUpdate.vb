@@ -11,7 +11,7 @@ Module modUpdate
         comm.Connection = con
         comm.CommandText = "ChangePassword"
         comm.CommandType = CommandType.StoredProcedure
-        comm.Parameters.AddWithValue("@UserId", modPublicValues.UserId)
+        comm.Parameters.AddWithValue("@UserId", LoginPublicValues.UserId)
         comm.Parameters.AddWithValue("@NewPassword", frmChangePassword.txtConfirmPassword.Text)
         comm.ExecuteNonQuery()
         MessageBox.Show("Success")
@@ -25,7 +25,7 @@ Module modUpdate
         comm.Connection = con
         comm.CommandText = "ChangeActive"
         comm.CommandType = CommandType.StoredProcedure
-        comm.Parameters.AddWithValue("@UserId", modPublicValues.UserId)
+        comm.Parameters.AddWithValue("@UserId", LoginPublicValues.UserId)
         comm.ExecuteNonQuery()
     End Sub
 
@@ -37,7 +37,7 @@ Module modUpdate
         comm.Connection = con
         comm.CommandText = "ChangeInactive"
         comm.CommandType = CommandType.StoredProcedure
-        comm.Parameters.AddWithValue("@UserId", modPublicValues.UserId)
+        comm.Parameters.AddWithValue("@UserId", LoginPublicValues.UserId)
         comm.ExecuteNonQuery()
     End Sub
 End Module
