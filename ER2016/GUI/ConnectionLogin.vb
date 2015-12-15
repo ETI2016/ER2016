@@ -3,6 +3,7 @@ Module ConnectionLogin
     Dim LoginConnect As SqlConnection
     Dim LoginCommand As SqlCommand
     Public Sub Connection()
+        'Check login details
         Dim ConnectLogin As SqlConnection
         Dim CommandLogin As SqlCommandBuilder
         Dim LoginDataAdapter As SqlDataAdapter
@@ -11,7 +12,7 @@ Module ConnectionLogin
         Dim LoginRows As Integer
 
         ConnectLogin = New SqlConnection
-        ConnectLogin.ConnectionString = "Data Source=itdevjrgomez;Initial Catalog=ERDB;Persist Security Info=True;User ID=eti;Password=enigmatech2015"
+        ConnectLogin.ConnectionString = "Data Source=" + DatabasePublicValues.DatabaseName + ";Initial Catalog=ERDB;Persist Security Info=True;User ID=erdbuser;Password=usererdb"
         ConnectLogin.Open()
         LoginSQL = "SELECT * FROM MUser WHERE UserName = '" + frmLogin.txtUsername.Text + "' And UPassword ='" + frmLogin.txtPassword.Text + "' "
         LoginDataAdapter = New SqlDataAdapter(LoginSQL, ConnectLogin)
@@ -43,5 +44,6 @@ Module ConnectionLogin
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+        'ITDev Niel 12/15/2015
     End Sub
 End Module

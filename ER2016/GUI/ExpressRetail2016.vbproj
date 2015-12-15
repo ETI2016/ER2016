@@ -72,6 +72,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionDatabase.vb" />
+    <Compile Include="DatabasePublicValues.vb" />
     <Compile Include="frmAddEditCusGroup.Designer.vb">
       <DependentUpon>frmAddEditCusGroup.vb</DependentUpon>
     </Compile>
