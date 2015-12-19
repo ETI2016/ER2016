@@ -24,7 +24,6 @@ Partial Class frmUserAccess
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUserAccess))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -32,10 +31,7 @@ Partial Class frmUserAccess
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -46,14 +42,16 @@ Partial Class frmUserAccess
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox12)
+        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
@@ -66,16 +64,6 @@ Partial Class frmUserAccess
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "User"
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Location = New System.Drawing.Point(357, 49)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(55, 17)
-        Me.CheckBox12.TabIndex = 10
-        Me.CheckBox12.Text = "Admin"
-        Me.CheckBox12.UseVisualStyleBackColor = True
         '
         'TextBox4
         '
@@ -129,63 +117,30 @@ Partial Class frmUserAccess
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button9)
-        Me.GroupBox2.Controls.Add(Me.Button8)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.CheckBox2)
-        Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.TextBox3)
         Me.GroupBox2.Controls.Add(Me.TextBox2)
         Me.GroupBox2.Location = New System.Drawing.Point(6, 93)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(485, 88)
+        Me.GroupBox2.Size = New System.Drawing.Size(485, 62)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Access"
         '
-        'Button8
+        'Button9
         '
-        Me.Button8.Location = New System.Drawing.Point(418, 37)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(49, 22)
-        Me.Button8.TabIndex = 10
-        Me.Button8.Text = "Access"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(418, 15)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(49, 22)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Access"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(363, 41)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(48, 17)
-        Me.CheckBox2.TabIndex = 7
-        Me.CheckBox2.Text = "BOS"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(363, 18)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(48, 17)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "POS"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Button9.Location = New System.Drawing.Point(357, 19)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(102, 24)
+        Me.Button9.TabIndex = 11
+        Me.Button9.Text = "Change Password"
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 33)
+        Me.Label2.Location = New System.Drawing.Point(11, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(36, 13)
         Me.Label2.TabIndex = 2
@@ -194,7 +149,7 @@ Partial Class frmUserAccess
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(168, 33)
+        Me.Label3.Location = New System.Drawing.Point(168, 27)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 13)
         Me.Label3.TabIndex = 3
@@ -202,14 +157,14 @@ Partial Class frmUserAccess
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(224, 28)
+        Me.TextBox3.Location = New System.Drawing.Point(224, 22)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(115, 20)
         Me.TextBox3.TabIndex = 5
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(55, 28)
+        Me.TextBox2.Location = New System.Drawing.Point(55, 22)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(103, 20)
         Me.TextBox2.TabIndex = 4
@@ -217,7 +172,7 @@ Partial Class frmUserAccess
         'Button1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(226, 187)
+        Me.Button1.Location = New System.Drawing.Point(226, 161)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(49, 48)
         Me.Button1.TabIndex = 36
@@ -228,7 +183,7 @@ Partial Class frmUserAccess
         'Button6
         '
         Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.Location = New System.Drawing.Point(171, 187)
+        Me.Button6.Location = New System.Drawing.Point(171, 161)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(49, 48)
         Me.Button6.TabIndex = 35
@@ -239,7 +194,7 @@ Partial Class frmUserAccess
         'Button5
         '
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(116, 187)
+        Me.Button5.Location = New System.Drawing.Point(116, 161)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(49, 48)
         Me.Button5.TabIndex = 34
@@ -250,7 +205,7 @@ Partial Class frmUserAccess
         'Button3
         '
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(61, 187)
+        Me.Button3.Location = New System.Drawing.Point(61, 161)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(49, 48)
         Me.Button3.TabIndex = 33
@@ -261,7 +216,7 @@ Partial Class frmUserAccess
         'Button4
         '
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(6, 187)
+        Me.Button4.Location = New System.Drawing.Point(6, 161)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(49, 48)
         Me.Button4.TabIndex = 32
@@ -272,7 +227,7 @@ Partial Class frmUserAccess
         'Button7
         '
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.Location = New System.Drawing.Point(442, 187)
+        Me.Button7.Location = New System.Drawing.Point(442, 161)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(49, 48)
         Me.Button7.TabIndex = 37
@@ -280,21 +235,29 @@ Partial Class frmUserAccess
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Button9
+        'Label6
         '
-        Me.Button9.Location = New System.Drawing.Point(55, 58)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(102, 24)
-        Me.Button9.TabIndex = 11
-        Me.Button9.Text = "Change Password"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(288, 52)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(65, 13)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "User Rights:"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(357, 47)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 11
         '
         'frmUserAccess
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(496, 240)
+        Me.ClientSize = New System.Drawing.Size(496, 216)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button6)
@@ -328,16 +291,13 @@ Partial Class frmUserAccess
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents CheckBox12 As CheckBox
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button9 As Button
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label6 As Label
 End Class

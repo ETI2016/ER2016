@@ -104,7 +104,7 @@ Partial Class frmLogin
         Me.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnLogin.Image = CType(resources.GetObject("btnLogin.Image"), System.Drawing.Image)
         Me.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLogin.Location = New System.Drawing.Point(106, 329)
+        Me.btnLogin.Location = New System.Drawing.Point(105, 329)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(65, 27)
         Me.btnLogin.TabIndex = 3
@@ -117,9 +117,9 @@ Partial Class frmLogin
         '
         Me.btnCancel.BackColor = System.Drawing.Color.Silver
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
-        Me.btnCancel.Location = New System.Drawing.Point(174, 329)
+        Me.btnCancel.Location = New System.Drawing.Point(176, 329)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(64, 27)
+        Me.btnCancel.Size = New System.Drawing.Size(65, 27)
         Me.btnCancel.TabIndex = 4
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -130,7 +130,7 @@ Partial Class frmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(248, 363)
+        Me.ClientSize = New System.Drawing.Size(248, 361)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.GroupBox1)

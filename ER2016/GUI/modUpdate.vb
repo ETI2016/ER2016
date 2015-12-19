@@ -15,7 +15,7 @@ Module modUpdate
         comm.Parameters.AddWithValue("@UserId", LoginPublicValues.UserId)
         comm.Parameters.AddWithValue("@NewPassword", frmChangePassword.txtConfirmPassword.Text)
         comm.ExecuteNonQuery()
-        MessageBox.Show("Success")
+        MessageBox.Show("Change password complete", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         'ITDev Niel 12/15/2015
     End Sub
 
