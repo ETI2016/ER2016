@@ -53,6 +53,16 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=ERSERVER;Initial Catalog=ERDB;User ID=erdbuser;Password=usererdb")>  _
+        Public ReadOnly Property ERDBConnectionString() As String
+            Get
+                Return CType(Me("ERDBConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

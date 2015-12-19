@@ -23,6 +23,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>ExpressRetail2016.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -72,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer\ConnectionCustomer.vb" />
     <Compile Include="frmAddEditCusGroup.Designer.vb">
       <DependentUpon>frmAddEditCusGroup.vb</DependentUpon>
     </Compile>
@@ -108,16 +110,16 @@
     <Compile Include="frmCusGroup.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCusSearch.Designer.vb">
+    <Compile Include="Customer\frmCusSearch.Designer.vb">
       <DependentUpon>frmCusSearch.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCusSearch.vb">
+    <Compile Include="Customer\frmCusSearch.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCustomer.Designer.vb">
+    <Compile Include="Customer\frmCustomer.Designer.vb">
       <DependentUpon>frmCustomer.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCustomer.vb">
+    <Compile Include="Customer\frmCustomer.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDepartment.Designer.vb">
@@ -277,8 +279,11 @@
     <Compile Include="mdiMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="modAdd.vb" />
     <Compile Include="modConnection.vb" />
+    <Compile Include="modDelete.vb" />
     <Compile Include="modPublicValues.vb" />
+    <Compile Include="modSearch.vb" />
     <Compile Include="modUpdate.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -315,10 +320,10 @@
     <EmbeddedResource Include="frmCusGroup.resx">
       <DependentUpon>frmCusGroup.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCusSearch.resx">
+    <EmbeddedResource Include="Customer\frmCusSearch.resx">
       <DependentUpon>frmCusSearch.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCustomer.resx">
+    <EmbeddedResource Include="Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDepartment.resx">
