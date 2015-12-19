@@ -198,7 +198,7 @@ Partial Class frmBOSAccess
         '
         'btnEdit
         '
-        Me.btnEdit.Location = New System.Drawing.Point(247, 12)
+        Me.btnEdit.Location = New System.Drawing.Point(247, 23)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(71, 29)
         Me.btnEdit.TabIndex = 2
